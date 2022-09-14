@@ -30,7 +30,6 @@ module.exports = class NoBitches extends Plugin {
   }
 
   async findBlahaj() {
-    http.get();
     const response = await http.get('https://blahaj.shop/api/random/text');
     const text = response.body.toString();
     return text;
